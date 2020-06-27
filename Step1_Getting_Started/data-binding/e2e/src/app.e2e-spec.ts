@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('create-new-component app is running!');
+    expect(page.getTitleText()).toEqual('data-binding app is running!');
   });
 
   afterEach(async () => {

@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "create-new-component": {
+    "data-binding": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/create-new-component",
+            "outputPath": "dist/data-binding",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,7 +24,6 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -63,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "create-new-component:build"
+            "browserTarget": "data-binding:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "create-new-component:build:production"
+              "browserTarget": "data-binding:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "create-new-component:build"
+            "browserTarget": "data-binding:build"
           }
         },
         "test": {
@@ -111,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "create-new-component:serve"
+            "devServerTarget": "data-binding:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "create-new-component:serve:production"
+              "devServerTarget": "data-binding:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "create-new-component"
+  "defaultProject": "data-binding"
 }
