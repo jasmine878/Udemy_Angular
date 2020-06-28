@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from "@angular/forms"
 
 import { AppComponent } from './app.component';
 import { UserNameComponent } from './username/username.component';
@@ -10,7 +11,8 @@ import { UserNameComponent } from './username/username.component';
     UserNameComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
