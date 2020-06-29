@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ThrowStmt } from '@angular/compiler';
 
 @Component({
   selector: 'app-username',
@@ -8,13 +9,8 @@ import { Component } from '@angular/core';
 
 export class UserNameComponent {
   username: string = "";
-  isEmptyUser: boolean = true;
 
-  onResetUser(): void {
-    if (this.username === "") {
-      this.isEmptyUser = true;
-    } else {
-      this.isEmptyUser = false;
-    }
-  }
+  // onResetUser(): void {
+  //   this.username = "";
+  // }
 }

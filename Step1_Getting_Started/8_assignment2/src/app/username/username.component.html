@@ -1,4 +1,5 @@
 <label>Username</label>
-<input [(ngModel)] = "username" (input)="onResetUser">
+<input [(ngModel)] = "username">
 <p>{{ username }}</p>
-<button [disabled]="username === ''" (click)="onResetUser">Reset User</button>
+<!-- <button [disabled]="username === ''" (click)="onResetUser()">Reset User</button> -->
+<button class="btn btn-primary" [disabled]="username === ''" (click)="username = ''">Reset User</button>
