@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
 
 export class UserNameComponent {
   username: string = "";
-  emptyUser: boolean = true;
+  isEmptyUser: boolean = true;
 
   onResetUser(): void {
     if (this.username === "") {
-      this.emptyUser = true;
+      this.isEmptyUser = true;
     } else {
-      this.emptyUser = false;
+      this.isEmptyUser = false;
     }
   }
 }
