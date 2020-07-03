@@ -1,6 +1,7 @@
 <div class="container">
-  <button (click)="showMessage()">Display Details</button>
-  <p *ngIf="allowButtonClick">On an island of green and an ocean of blue, we found simplicity</p>
+  <button (click)="onDisplayResults()">Display Details</button>
+  <p *ngIf="showMessage">On an island of green and an ocean of blue, we found simplicity</p>
+  <p *ngFor="let entry of messageCount">{{ entry }}</p>
 </div>
 
 
