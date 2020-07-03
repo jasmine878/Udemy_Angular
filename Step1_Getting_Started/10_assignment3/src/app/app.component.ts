@@ -9,6 +9,6 @@ export class AppComponent {
   allowButtonClick = false;
 
   showMessage() {
-    this.allowButtonClick = true;
+    this.allowButtonClick = !this.allowButtonClick;
   }
 }
