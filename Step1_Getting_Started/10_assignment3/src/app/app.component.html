@@ -1,6 +1,6 @@
 <div class="container">
-  <button>Display Details</button>
-  <p>On an island of green and an ocean of blue, we found simplicity</p>
+  <button [disabled]='allowButtonClick' (click)="showMessage()">Display Details</button>
+  <p *ngIf="allowButtonClick">On an island of green and an ocean of blue, we found simplicity</p>
 </div>
 
 
