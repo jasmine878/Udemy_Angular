@@ -1,7 +1,7 @@
 <div class="container">
   <button (click)="onDisplayResults()">Display Details</button>
   <p *ngIf="showMessage">On an island of green and an ocean of blue, we found simplicity</p>
-  <p *ngFor="let entry of messageCount" [ngStyle]="{'background-color': entry > 4 ? 'blue' : 'white', color: entry > 4 ? 'white' : 'black'}">{{ entry }}</p>
+  <p [ngClass]="{log: entry > 4}" *ngFor="let entry of messageCount" [ngStyle]="{'background-color': entry > 4 ? 'blue' : 'white'}">{{ entry }}</p>
 </div>
 
 
