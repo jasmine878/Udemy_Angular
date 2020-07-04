@@ -13,8 +13,8 @@
       <hr>
       <button (click)="onDisplayResults()">Display Details</button>
       <p *ngIf="showMessage">On an island of green and an ocean of blue, we found simplicity</p>
-      <p [ngClass]="{log: entry > 4}" *ngFor="let entry of messageCount"
-        [ngStyle]="{'background-color': entry > 4 ? 'blue' : 'transparent'}">{{ entry }}</p>
+      <p [ngClass]="{log: i >= 4}" *ngFor="let entry of messageCount; let i = index"
+        [ngStyle]="{'background-color': i >= 4 ? 'blue' : 'transparent'}">{{ entry }}</p>
     </div>
   </div>
 </div>

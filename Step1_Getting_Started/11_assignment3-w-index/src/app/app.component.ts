@@ -7,14 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   showMessage = true;
-  count = 0;
   messageCount = [];
 
   onDisplayResults() {
     this.showMessage = !this.showMessage;
-    this.count++;
-    this.messageCount.push(this.count);
-    // console.log(this.count);
-    // console.log(this.messageCount);
+    this.messageCount.push(new Date());
   }
 }
