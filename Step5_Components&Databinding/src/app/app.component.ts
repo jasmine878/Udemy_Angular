@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CockpitComponent } from './cockpit';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +6,6 @@ import { CockpitComponent } from './cockpit';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  serverElements = [];
+  serverElements = [{type: 'server', name: 'Testserver', content: 'Just a test!'}];
 
 }
