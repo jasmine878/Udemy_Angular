@@ -9,7 +9,6 @@ export class GameControlComponent implements OnInit {
   interval;
   @Output() intervalFired = new EventEmitter<number>();
   count: number = 1;
-  // odds: number[];
 
   constructor() { }
 
