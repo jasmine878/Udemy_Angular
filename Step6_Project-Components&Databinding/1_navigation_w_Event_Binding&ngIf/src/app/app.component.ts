@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  displayRecipe: boolean = true;
+  displayIngredients: boolean = true;
 
+  navigation(option: string) {
+    option === "recipe" ? this.displayRecipe = true : this.displayRecipe = false;
+    this.displayIngredients = !this.displayRecipe;
+  }
 }
