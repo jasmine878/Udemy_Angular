@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSelectContent(content) {
+  onSelectContent(content: string) {
     this.displayContent.emit(content);
   }
 
