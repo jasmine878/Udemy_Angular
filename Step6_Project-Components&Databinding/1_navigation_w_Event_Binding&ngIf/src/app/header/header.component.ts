@@ -13,12 +13,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onShowRecipe() {
-    this.displayContent.emit("recipe");
-  }
-
-  onShowShoppingList() {
-    this.displayContent.emit("shoppinglist");
+  onSelectContent(content) {
+    this.displayContent.emit(content);
   }
 
 }
