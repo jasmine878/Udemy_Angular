@@ -8,7 +8,6 @@ import { Ingredient } from 'src/app/shared/ingredient.model';
 })
 export class ShoppingListEditComponent implements OnInit {
   @Output() shoppingListItem = new EventEmitter <{ name: string, amount: number }>();
-  newItem: Ingredient;
 
   constructor() { }
 
@@ -16,7 +15,7 @@ export class ShoppingListEditComponent implements OnInit {
   }
 
   onSubmit(name, amount) {
-    this.newItem = new Ingredient(name.value, amount.value)
-    this.shoppingListItem.emit(this.newItem)
+    const newItem = new Ingredient(name.value, amount.value)
+    this.shoppingListItem.emit(newItem)
   }
 }
