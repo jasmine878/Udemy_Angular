@@ -10,7 +10,8 @@
           <li
             class="list-group-item"
             *ngFor="let oddNumber of oddNumbers"
-            [ngClass]="{ odd: onlyOdd }">
+            [ngClass]="{ odd: onlyOdd }"
+            [ngStyle]="{ backgroundColor: 'yellow'}">
             {{ oddNumber }}
           </li>
         </div>
