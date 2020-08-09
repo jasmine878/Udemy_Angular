@@ -1,7 +1,8 @@
 import {
   Directive,
   HostListener,
-  HostBinding
+  HostBinding,
+  Input
 } from '@angular/core';
 
 @Directive({
@@ -9,16 +10,18 @@ import {
 })
 
 export class BetterHighlightDirective {
-  @HostBinding('style.backgroundColor') backgroundColor: string = 'transparent';
+  @Input() defaultColor: string = 'transparent';
+  @Input() highlightColor: string = 'blue'
+  @HostBinding('style.backgroundColor') backgroundColor: string = this.defaultColor;
   @HostBinding('style.color') color: string = 'black';
 
   @HostListener('mouseenter') mouseover(eventData: Event) {
-    this.backgroundColor = 'blue';
+    this.backgroundColor = this.highlightColor;
     this.color = 'white';
    }
 
    @HostListener('mouseleave') mouseleave(eventData: Event) {
-    this.backgroundColor = 'transparent';
+    this.backgroundColor = this.defaultColor;
     this.color = 'black';
    }
 }
