@@ -12,6 +12,6 @@ export class InactiveUsersComponent {
   constructor(private usersService: UsersService) {}
 
   onSetToActive(id: number) {
-    this.usersService.SetToActive(id);
+    this.usersService.setToActive(id);
   }
 }

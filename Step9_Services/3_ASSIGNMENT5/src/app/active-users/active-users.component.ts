@@ -13,6 +13,6 @@ export class ActiveUsersComponent {
   constructor(private usersService: UsersService) {}
 
   onSetToInactive(id: number) {
-    this.usersService.SetToInactive(id);
+    this.usersService.setToInactive(id);
   }
 }
