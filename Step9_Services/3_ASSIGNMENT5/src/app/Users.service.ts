@@ -1,5 +1,5 @@
 import { Injectable } from "@angular/core";
-import { LoggingService } from "./Logging.service";
+import { LoggingService } from "./logging.service";
 
 @Injectable()
 
