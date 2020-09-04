@@ -1,6 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Ingredient } from 'src/app/shared/ingredient.model';
-import { ShoppinglistService } from 'src/app/shopping-list.service';
+import { ShoppinglistService } from '../shopping-list.service';
+
 
 @Component({
   selector: 'app-shopping-list-edit',
