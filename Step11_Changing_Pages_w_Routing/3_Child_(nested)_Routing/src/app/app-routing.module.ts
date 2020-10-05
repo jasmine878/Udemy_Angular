@@ -27,6 +27,12 @@ const appRoutes: Routes = [
   { path: '**', redirectTo: '/not-found' }
 ]
 
+@NgModule({
+  imports: [
+    RouterModule.forRoot(appRoutes)
+  ]
+})
+
 export class AppRoutingModule {
 
 }
